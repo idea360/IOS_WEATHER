@@ -17,11 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var displayResultsLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
     
     @IBAction func searchButton(sender: AnyObject) {
         if cityTextField.text?.characters.count > 1 {
             self.view.endEditing(true)
-            getWeather(cityTextField.text!.stringByReplacingOccurrencesOfString(" ", withString: "-"))
+            let city = cityTextField.text!.stringByReplacingOccurrencesOfString(" ", withString: "-")
+            cityLabel.text = cityTextField.text
+            cityTextField.text = ""
+            getWeather(city)
         }
         else {
             displayResultsLabel.text = "Please enter a valid city."

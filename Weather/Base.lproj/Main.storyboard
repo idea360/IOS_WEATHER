@@ -54,6 +54,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-lW-uXG">
+                                <rect key="frame" x="178" y="211" width="244" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ntm-sQ-SrA"/>
+                                    <constraint firstAttribute="width" constant="244" id="bbE-EZ-ffU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIY-FQ-n3R">
                                 <rect key="frame" x="276" y="139" width="48" height="30"/>
                                 <animations/>
@@ -67,11 +78,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a city to find it's weather." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-Gl-kjo">
-                                <rect key="frame" x="178" y="176" width="244" height="225"/>
+                                <rect key="frame" x="178" y="240" width="244" height="225"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="244" id="PcZ-9d-OXg"/>
-                                    <constraint firstAttribute="height" constant="225" id="QdJ-FQ-RoX"/>
+                                    <constraint firstAttribute="height" constant="225" id="cya-lE-BxV"/>
+                                    <constraint firstAttribute="width" constant="244" id="wUe-jo-KmJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -83,22 +94,25 @@
                         <constraints>
                             <constraint firstItem="YIY-FQ-n3R" firstAttribute="top" secondItem="nh6-46-xxV" secondAttribute="bottom" constant="8" id="0iR-bg-to4"/>
                             <constraint firstItem="nh6-46-xxV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ue-jX-NMa"/>
+                            <constraint firstItem="fkE-Gl-kjo" firstAttribute="top" secondItem="OTf-lW-uXG" secondAttribute="bottom" constant="8" id="8lM-XR-MVn"/>
+                            <constraint firstItem="fkE-Gl-kjo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcK-T0-5NF"/>
                             <constraint firstItem="tv2-93-vA7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DYM-4O-2p7"/>
                             <constraint firstItem="E6s-7L-n0n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="EvI-CW-MWr"/>
                             <constraint firstItem="E6s-7L-n0n" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="SkV-Kx-kE3"/>
                             <constraint firstItem="r9r-Ur-S4n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vcl-9M-xzW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E6s-7L-n0n" secondAttribute="trailing" constant="-20" id="Zee-e9-6d2"/>
                             <constraint firstItem="tv2-93-vA7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="cPS-PI-N5S"/>
+                            <constraint firstItem="OTf-lW-uXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eAv-9l-MJ4"/>
                             <constraint firstItem="nh6-46-xxV" firstAttribute="top" secondItem="r9r-Ur-S4n" secondAttribute="bottom" constant="8" id="gUG-W6-eFm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E6s-7L-n0n" secondAttribute="bottom" id="hTQ-oo-Vqg"/>
-                            <constraint firstItem="fkE-Gl-kjo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kha-Fg-ngA"/>
+                            <constraint firstItem="OTf-lW-uXG" firstAttribute="top" secondItem="YIY-FQ-n3R" secondAttribute="bottom" constant="42" id="nnj-gT-mec"/>
                             <constraint firstItem="YIY-FQ-n3R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o2F-Qj-s9e"/>
-                            <constraint firstItem="fkE-Gl-kjo" firstAttribute="top" secondItem="YIY-FQ-n3R" secondAttribute="bottom" constant="7" id="shx-T2-IAz"/>
                             <constraint firstItem="r9r-Ur-S4n" firstAttribute="top" secondItem="tv2-93-vA7" secondAttribute="bottom" constant="8" id="vhI-ap-sSU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="E6s-7L-n0n" id="RYY-KP-0YQ"/>
+                        <outlet property="cityLabel" destination="OTf-lW-uXG" id="qcL-gK-RbL"/>
                         <outlet property="cityTextField" destination="nh6-46-xxV" id="efi-HM-5L4"/>
                         <outlet property="displayResultsLabel" destination="fkE-Gl-kjo" id="f4n-jM-bpR"/>
                     </connections>
