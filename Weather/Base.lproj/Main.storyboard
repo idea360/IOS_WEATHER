@@ -62,6 +62,9 @@
                                     <constraint firstAttribute="width" constant="48" id="iXU-GD-dtr"/>
                                 </constraints>
                                 <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mqr-Zq-iIO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a city to find it's weather." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-Gl-kjo">
                                 <rect key="frame" x="178" y="176" width="244" height="225"/>
@@ -96,6 +99,8 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="E6s-7L-n0n" id="RYY-KP-0YQ"/>
+                        <outlet property="cityTextField" destination="nh6-46-xxV" id="efi-HM-5L4"/>
+                        <outlet property="displayResultsLabel" destination="fkE-Gl-kjo" id="f4n-jM-bpR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
