@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8A24D48090D6A8647486FB47BEDC5F45FCA66835",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EF267634675BA58AD124B33D145E7BC0F1AF7CB5" : 0,
+    "8A24D48090D6A8647486FB47BEDC5F45FCA66835" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C2FA5D64-4437-484F-9EE4-FB8CB87F19D3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EF267634675BA58AD124B33D145E7BC0F1AF7CB5" : "",
+    "8A24D48090D6A8647486FB47BEDC5F45FCA66835" : "Weather\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Weather",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Weather.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:idea360\/IOS_WEATHER.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A24D48090D6A8647486FB47BEDC5F45FCA66835"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:idea360\/xcodeprojects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF267634675BA58AD124B33D145E7BC0F1AF7CB5"
+    }
+  ]
+}

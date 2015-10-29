@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func searchButton(sender: AnyObject) {
         if cityTextField.text?.characters.count > 1 {
+            self.view.endEditing(true)
             getWeather(cityTextField.text!.stringByReplacingOccurrencesOfString(" ", withString: "-"))
         }
         else {
@@ -74,5 +75,17 @@ class ViewController: UIViewController {
             displayResultsLabel.text = "Please Enter a valid city."
         }
     }
+    
+    //closed keyboard on touch!
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField:UITextField) -> Bool{
+        textField.resignFirstResponder()
+        
+        return true
+    }
+
 }
 
